@@ -1,9 +1,18 @@
+import java.util.LinkedList;
+import java.util.List;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
+        String book1 = "Zbrodnia i kara, Fiodor Dostojewski, 2021, 1";
+
+        List<String> library = new LinkedList<String>();
+        library.add(book1);
+
+        library.forEach((value) -> System.out.println(value));
+        System.out.println(library.get(0));
+
         int input = showMenu();
         System.out.println(input);
     }
@@ -29,3 +38,9 @@ public class Main {
         return input;
     }
 }
+
+
+
+
+
+
